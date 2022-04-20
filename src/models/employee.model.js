@@ -13,6 +13,8 @@ const employeeSchema = mongoose.Schema({
     require: true,
   },
   position_job: {
+    type: Object,
+    require: true,
     position: {
       type: String,
       require: true
@@ -22,6 +24,8 @@ const employeeSchema = mongoose.Schema({
       require: true
     },
     department:{
+      type: Object,
+      require: true,
       departmentId:{
         type: String,
         require: true,
