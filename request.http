@@ -1,0 +1,44 @@
+###
+POST http://localhost:3000/api/v1/employees/employee HTTP/1.1
+Content-Type: application/json
+
+{
+  "name" : "Jaime Alonso",
+  "lastname" : "Parra Lozada",
+  "salary": 1,
+  "position_job" :{
+    "position": "CEO",
+    "salary": 2,
+    "department":{
+      "departmentId": "43",
+      "departmentName": "Risaralda"
+    }
+  }
+}
+
+###
+GET http://localhost:3000/api/v1/employees HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/employees/6260058165814fb87d31fcea HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/employees/625ffff94932514f13c8b108 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name" : "Joima Alonso",
+  "lastname" : "Porra Lozada",
+  "salary": 1,
+  "position_job" :{
+    "position": "CEO",
+    "salary": 2,
+    "department":{
+      "departmentId": "43",
+      "departmentName": "Risaralda"
+    }
+  }
+}
+
+###
+DELETE  http://localhost:3000/api/v1/employees/625ffff94932514f13c8b108 HTTP/1.1
